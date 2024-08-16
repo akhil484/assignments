@@ -9,7 +9,7 @@ function findLargestElement(numbers) {
     len = numbers.length
     if(len<=0)
     {
-        return -1;
+        return undefined;
     }
     let maxi = numbers[0];
     for(let i=0;i<numbers.length;i++)
@@ -19,4 +19,4 @@ function findLargestElement(numbers) {
     return maxi;
 }
 
-console.log(findLargestElement([3, 7, 2, 9, 1]));
+module.exports = findLargestElement;

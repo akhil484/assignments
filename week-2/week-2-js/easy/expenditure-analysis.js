@@ -20,31 +20,10 @@ let transactions=[
 		'price': 10,
 		'category': 'Food',
 		'itemName': 'Pizza',
-	},
-  {
-		'id': 2,
-		'timestamp': 1656076800000,
-		'price': 20,
-		'category': 'Food',
-		'itemName': 'Fries',
-	},
-  {
-		'id': 3,
-		'timestamp': 1656076800000,
-		'price': 15,
-		'category': 'Drink',
-		'itemName': 'Milk',
-	},
-  {
-		'id': 3,
-		'timestamp': 1656076800000,
-		'price': 15,
-		'category': 'Drink',
-		'itemName': 'Energy-Drink',
 	}
 ];
 
-function calculateTotalSpentByCategory() {
+function calculateTotalSpentByCategory(transactions) {
   categorywise_spent = [];
   for(let i=0;i<transactions.length;i++)
   {
@@ -69,4 +48,4 @@ function calculateTotalSpentByCategory() {
   return ans;
 }
 
-console.log(calculateTotalSpentByCategory());
+module.exports = calculateTotalSpentByCategory;

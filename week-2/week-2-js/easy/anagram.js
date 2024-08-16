@@ -12,8 +12,8 @@ function isAnagram(str1, str2) {
   for(let i=0;i<str1.length;i++)
   {
     
-    let strr1=str1.split("").sort().join("");
-    let strr2=str2.split("").sort().join("");
+    let strr1=str1.toLowerCase().split("").sort().join("");
+    let strr2=str2.toLowerCase().split("").sort().join("");
     
     for(let i=0;i<str1.length;i++)
     {
@@ -26,4 +26,5 @@ function isAnagram(str1, str2) {
   return true;
 }
 
-console.log(isAnagram("spar","rsap"));
+module.exports = isAnagram;
+

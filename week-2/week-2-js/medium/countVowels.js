@@ -19,4 +19,4 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels('raDAree'));
+module.exports = countVowels;
