@@ -9,5 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let sum = 0;
+    let time_before_start = Date.now();
+    for(let i=1;i<=n;i++)
+    {
+        sum+=i;
+    }
+    let after_calculation = Date.now();
+    console.log('Time Elapsed in Milliseconds', after_calculation - time_before_start);
+    return sum;
 }
+
+console.log(calculateTime(100000000));

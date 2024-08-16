@@ -4,7 +4,17 @@
 */
 
 function isPalindrome(str) {
+  let n = str.length;
+  let i=0,j=n-1;
+  while(i<j)
+  {
+    if(str[i].toLowerCase()!=str[j].toLowerCase())
+    {
+      return false;
+    }
+    i++;j--;
+  }
   return true;
 }
 
-module.exports = isPalindrome;
+console.log(isPalindrome('radaR'));
